@@ -1,17 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questions</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f1f6fb; color: #18324b; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; }
+        header { background-color: #123c66; color: white; padding: 20px 0; width: 100%; text-align: center; }
+        main { background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); width: 90%; max-width: 600px; margin-top: 30px; }
+        form { display: flex; flex-direction: column; }
+        textarea { width: 100%; padding: 12px; border: 1px solid #bdc3c7; border-radius: 8px; box-sizing: border-box; resize: vertical; margin-bottom: 20px; }
+        input[type="submit"] { background-color: #1478bd; color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: background-color 0.3s; }
+        input[type="submit"]:hover { background-color: #123c66; }
+        a { color: #1769aa; text-decoration: none; margin-top: 20px; display: inline-block; text-align: center; width: 100%; }
+    </style>
 </head>
 <body>
-    <h1>প্রশ্ন ও উত্তর</h1>
-    <form action= https://formspree.io/f/mzeejvzk method="post">
-        <label for="question">আপনার প্রশ্ন লিখুন:</label><br>
-        <textarea id="question" name="question" rows="4" cols="50" required></textarea><br><br>
-        <input type="submit" value="প্রশ্ন জমা দিন">
-    </form>
-    <a href="index.html">হোম পেজে ফিরে যান</a>
+    <header>
+        <h1>প্রশ্ন ও উত্তর</h1>
+    </header>
+    <main>
+        <form action="https://formspree.io/f/mzeejvzk" method="post">
+            <label for="question">আপনার প্রশ্ন লিখুন:</label><br>
+            <textarea id="question" name="question" rows="4" required></textarea><br><br>
+            <input type="submit" value="প্রশ্ন জমা দিন">
+        </form>
+        <a href="index.html">হোম পেজে ফিরে যান</a>
+    </main>
 </body>
 </html>
+
